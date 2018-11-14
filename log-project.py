@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """
 FSND - Log Analysis Project
 
