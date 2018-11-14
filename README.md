@@ -80,10 +80,11 @@ CREATE VIEW total_err as
             WHERE status != '200 OK'
             GROUP BY day;
 ```
-### Running the reporting tool
+### Run the reporting tool
 The logs reporting tool is executed with the following command:
 ```
 python log-project.py
 ```
 
 The answers to the three questions should now be displayed.
+
