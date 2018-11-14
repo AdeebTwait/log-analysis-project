@@ -4,7 +4,8 @@
 Part of the udacity [Full Stack Web Developer Nanodegree.](https://udacity.com/course/full-stack-web-developer-nanodegree--nd004)
 
 
-### Introduction
+## Introduction
+<hr>
  Python application that summarizes data from a large database using sql queries.
 The database in this project is a newspaper company database where it has three tables: `articles`,  `authors` and `log`.
 
@@ -20,19 +21,21 @@ And here are the questions the application should answer:
 
 Each one of these questions should be answered with a single database query.
 
-### Required Libraries and Dependencies
+## Required Libraries and Dependencies
+<hr>
 - Python 3
 - Postgresql
 - Vagrant
 - VirtualBox
 - Psycopg2 (python module)
 
-### How to run the application
+## How to run the application
+<hr>
 Download the project zip file to your computer and unzip the file. Or clone this repository to your desktop.
 
 Open the text-based interface for your operating system (e.g. the terminal window in Linux, the command prompt in Windows) and navigate to the project directory.
 
-#### Bringing the VM up
+### Bringing the VM up
 
 Bring up the VM with the following command:
 ``` sh
@@ -47,12 +50,13 @@ vagrant ssh
 
 More detailed instructions for installing the Vagrant VM can be found here.
 
-#### Make sure you're in the right place
+### Make sure you're in the right place
 Once inside the VM, navigate to the tournament directory with this command:
 ```sh
 cd /vagrant
 ```
-#### Load the logs into the database
+
+### Load the logs into the database
 First, unzip the zip file with the command:
 
 ```sh
@@ -64,7 +68,7 @@ Then run the following command to load the logs into the database:
 psql -d news -f newsdata.sql
 ```
 
-#### Create the views
+### Create the views
 ``` sql
 CREATE VIEW total_req as
             SELECT count(*)::numeric AS num, TO_CHAR(time, 'Month DD,YYYY') AS day
@@ -79,7 +83,7 @@ CREATE VIEW total_err as
             WHERE status != '200 OK'
             GROUP BY day;
 ```
-#### Running the reporting tool
+### Running the reporting tool
 The logs reporting tool is executed with the following command:
 ```
 python log-project.py
