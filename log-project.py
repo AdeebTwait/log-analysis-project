@@ -6,7 +6,7 @@ FSND - Log Analysis Project
 
 import psycopg2
 
-# Write the queries
+# Write the queries:
 articles_query = '''
           SELECT a.title, COUNT(*) AS views
           FROM articles AS a JOIN log AS l
@@ -41,6 +41,7 @@ error_query = '''
 DB_NAME = "news"
 
 
+# Execute the queries and format the output:
 def execute_query(query):
     try:
         db = psycopg2.connect(database=DB_NAME)
@@ -74,6 +75,7 @@ def error_day():
         print(str(day) + " - " + str(round(ErrorPercentage, 2)) + "% errors")
 
 
+# Call the functions:
 if __name__ == "__main__":
     print('\n' + "**************************************")
     top_articles()
