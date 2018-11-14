@@ -5,7 +5,6 @@ Part of the udacity [Full Stack Web Developer Nanodegree.](https://udacity.com/c
 
 
 ## Introduction
-<hr>
  Python application that summarizes data from a large database using sql queries.
 The database in this project is a newspaper company database where it has three tables: `articles`,  `authors` and `log`.
 
@@ -22,7 +21,6 @@ And here are the questions the application should answer:
 Each one of these questions should be answered with a single database query.
 
 ## Required Libraries and Dependencies
-<hr>
 - Python 3
 - Postgresql
 - Vagrant
@@ -30,7 +28,6 @@ Each one of these questions should be answered with a single database query.
 - Psycopg2 (python module)
 
 ## How to run the application
-<hr>
 Download the project zip file to your computer and unzip the file. Or clone this repository to your desktop.
 
 Open the text-based interface for your operating system (e.g. the terminal window in Linux, the command prompt in Windows) and navigate to the project directory.
